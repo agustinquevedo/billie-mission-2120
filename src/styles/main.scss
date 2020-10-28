@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@100;400&display=swap');
+
+// Set your brand colors
+$billie-red: #FF4338;
+$space-blue:#1C242F;
+
+// Update Bulma's global variables
+$body-background-color: $space-blue;
+$family-sans-serif: 'Roboto', sans-serif;
+$family-serif: 'Noto Serif', serif;;
+$danger: $billie-red;
+$notification-padding-rtl: 1.25rem;
+$notification-padding: 1.25rem;
+
+// Import Bulma
+@import '../../node_modules/bulma/bulma.sass';
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: $family-sans-serif;
+}
+
+body {
+    background: linear-gradient(
+            to bottom,
+            #{fade-out($space-blue, 0.7)} 0%,
+            #{fade-out($space-blue, 0.3)} 75%,
+            $space-blue 100%
+        ),
+        url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+body.has-navbar-fixed-top{ padding-top: 4.25rem; } // Class added in index.html.
+
+.title {
+    font-family: $family-serif;
+    color: $billie-red;
+}
+.navbar-brand { font-family: $family-serif; }
+.modal-content { opacity: 0.85; }
