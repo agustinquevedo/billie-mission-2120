@@ -33,7 +33,7 @@ const Modal = (props) => {
     return (
         <div className="modal is-active">
             <div className="modal-background"></div>
-            <div ref={el => {ModalBox = el}} className="modal-content">
+            <div ref={el => ModalBox = el} className="modal-content">
                 <div className="card">
                     <div className="card-content">
                         <div className="field">

@@ -1,6 +1,7 @@
 import React from 'react';
 
 function HomePage() {
+    
     return (
         <div className="hero is-fullheight-with-navbar">
             <div className="hero-body">
