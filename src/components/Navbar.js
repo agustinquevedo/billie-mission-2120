@@ -10,6 +10,18 @@ function Navbar(){
             <div className="container is-max-desktop">
                 <div className="navbar-brand">
                     <div className="navbar-item"><strong className="has-text-danger">Billie</strong> Mission 2120</div>
+                    <a 
+                    role="button"
+                    href="#/"
+                    className={`navbar-burger burger ${isActive ? 'is-active' : ''}`} 
+                    aria-label='menu'
+                    aria-expanded='false'
+                    data-target='navbarMenu'
+                    onClick={() => {setisActive(!isActive)}}>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
                 <div id='navbarMenu' className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                     <div className="navbar-end">

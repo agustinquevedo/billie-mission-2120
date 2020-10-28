@@ -1,20 +1,32 @@
 @charset 'utf-8';
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@300;400&display=swap');
 
 // Set your brand colors
 $billie-red: #FF4338;
 $space-blue:#1C242F;
 
 // Update Bulma's global variables
-$body-background-color: $space-blue;
 $family-sans-serif: 'Roboto', sans-serif;
-$family-serif: 'Noto Serif', serif;;
+$family-serif: 'Noto Serif', serif;
 $danger: $billie-red;
+$primary: $space-blue;
+
+// Update some of Bulma's component variables
 $navbar-item-hover-color: $billie-red;
+$navbar-item-active-color: $billie-red;
 $notification-padding-rtl: 1.25rem;
 $notification-padding: 1.25rem;
+$body-background-color: $space-blue;
+$title-family: $family-serif;
+$title-color: $billie-red;
+$body-color: white;
+$subtitle-color: white;
+$subtitle-strong-color: white;
+$strong-color: white;
+$subtitle-weight: 300;
+$card-header-shadow: none;
 
 // Import Bulma
 @import '../../node_modules/bulma/bulma.sass';
@@ -39,11 +51,6 @@ body {
     background-size: cover;
 }
 
-body.has-navbar-fixed-top{ padding-top: 4.25rem; } // Class added in index.html.
-
-.title {
-    font-family: $family-serif;
-    color: $billie-red;
-}
 .navbar-brand { font-family: $family-serif; }
+
 .modal-content { opacity: 0.85; }
